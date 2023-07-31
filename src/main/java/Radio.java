@@ -1,6 +1,7 @@
 public class Radio {
 
-    public int radioStationNumber;
+    private int radioStationNumber;
+    private int currentVolume;
 
     public int getRadioStationNumber() {
         return radioStationNumber;
@@ -35,8 +36,6 @@ public class Radio {
             radioStationNumber = 9;
         }
     }
-
-    public int currentVolume;
 
     public int getCurrentVolume() {
         return currentVolume;
