@@ -254,6 +254,18 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actuale);
     }
+
+    @Test
+    public void shouldSetRadioStationSince25() {
+        Radio radio = new Radio(30);
+
+        radio.setRadioStationNumber(25);
+
+        int expected = 25;
+        int actual = radio.getRadioStationNumber();
+
+        Assertions.assertEquals(expected, actual);
+    }
 }
 
 
